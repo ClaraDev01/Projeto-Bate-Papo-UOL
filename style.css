@@ -1,0 +1,219 @@
+body {
+  background-color: #f3f3f3;
+  margin: 80px auto 60px;
+  font-family: "Roboto", sans-serif;
+}
+.topo {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+.logo {
+  width: 75px;
+  height: 53px;
+  margin: 16px 22px 11px;
+}
+.icon {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 16px 22px 11px auto;
+  cursor: pointer;
+}
+.icon img {
+  width: 45px;
+  height: 45px;
+  display: block;
+}
+.menu-lateral {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80vw;
+  max-width: 300px;
+  height: 100vh;
+  background: white;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  transition: right 0.3s ease-in-out;
+}
+.menu-lateral.aberto {
+  right: 0;
+}
+#fundo-escuro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 15;
+}
+#fundo-escuro.aberto {
+  display: block;
+}
+.contato,
+.contatos,
+.visibilidade-opcoes {
+  display: flex;
+  flex-direction: column;
+}
+.contatos,
+.visibilidade-opcoes {
+  align-items: flex-start;
+  padding: 10px;
+  width: 100%;
+}
+.escolher-contato,
+.escolher-visibilidade {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 84px;
+}
+.escolher-contato h1,
+.escolher-visibilidade h1 {
+  font: 700 16px "Roboto", sans-serif;
+  line-height: 18.75px;
+  text-align: center;
+}
+.contato-todos,
+.usuarios-online,
+.mensagem-publica,
+.mensagem-privada {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px;
+  cursor: pointer;
+  width: calc(100% - 6px);
+}
+.contato-todos.selecionado,
+.usuarios-online.selecionado,
+.mensagem-publica.selecionado,
+.mensagem-privada.selecionado {
+  border-radius: 5px;
+}
+.contatos img,
+.visibilidade-opcoes img {
+  width: 25px;
+  height: 25px;
+}
+ion-icon {
+  width: 25px;
+  height: 25px;
+}
+.escreva-aqui {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: auto;
+  min-height: 60px;
+  background-color: #fff;
+  box-shadow: 0px -4px 6px 0px #0000000d;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.input-e-botao {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  width: 100%;
+}
+textarea {
+  flex-grow: 1;
+  min-height: 30px;
+  height: 20px;
+  border: none;
+  font-size: 16px;
+  padding: 5px;
+  resize: none;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+textarea::placeholder {
+  color: black;
+  font: 400 18px "Roboto", sans-serif;
+  line-height: 25px;
+}
+.enviar-mensagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enviar-mensagem ion-icon {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+#mensagens-container {
+  padding-top: calc(80px + 15px);
+  padding-bottom: calc(60px + 25px);
+  overflow-y: auto;
+}
+.mensagem {
+  min-height: 35px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  align-items: center;
+  text-align: left;
+}
+.mensagem strong {
+  font-weight: bold;
+}
+.tempo {
+  color: gray;
+  margin-right: 5px;
+}
+.mensagem.status {
+  background-color: #eaeaea;
+  color: black;
+  font: 400 14px "Roboto", sans-serif;
+}
+.mensagem.publica {
+  background-color: #fff;
+  color: black;
+  font: 400 14px "Roboto", sans-serif;
+}
+.mensagem.privada {
+  background-color: #f8d7da;
+  color: black;
+  font: 400 14px "Roboto", sans-serif;
+}
+.texto-envio {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #505050;
+  position: static;
+  text-align: left;
+  width: 100%;
+}
+.check {
+  display: none;
+  color: green;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.selecionado .check {
+  display: inline-block;
+}

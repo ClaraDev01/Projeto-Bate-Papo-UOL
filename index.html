@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Righteous&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <title>Bate-Papo UOL</title>
+  </head>
+  <body>
+    <header class="topo">
+      <div class="logo">
+        <img src="imagem/chatuol.png" alt="bate-papo-uol" />
+      </div>
+      <button class="icon" id="menu-icon" aria-label="Abrir menu lateral">
+        <img src="imagem/icons/people.svg" alt="Ícone de pessoas" />
+      </button>
+    </header>
+    <div class="menu-lateral">
+      <div class="contato">
+        <div class="escolher-contato">
+          <h1>Escolha um contato<br />para enviar mensagem:</h1>
+        </div>
+        <nav class="contatos">
+          <div class="contato-todos selecionado" data-destinatario="Todos">
+            <img src="imagem/icons/people.svg" />
+            <p>Todos</p>
+            <ion-icon name="checkmark-outline" class="check"></ion-icon>
+          </div>
+        </nav>
+        <div class="visibilidade">
+          <div class="escolher-visibilidade">
+            <h1>Escolha a visibilidade:</h1>
+          </div>
+        </div>
+        <nav class="visibilidade-opcoes">
+          <div class="mensagem-publica selecionado" data-visibilidade="message">
+            <img src="imagem/icons/lock-open.svg" alt="" />
+            <p>Público</p>
+            <ion-icon name="checkmark-outline" class="check"></ion-icon>
+          </div>
+          <div class="mensagem-privada" data-visibilidade="private_message">
+            <img src="imagem/icons/lock-closed.svg" alt="" />
+            <p>Reservadamente</p>
+            <ion-icon name="checkmark-outline" class="check"></ion-icon>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div id="mensagens-container"></div>
+    <div id="fundo-escuro"></div>
+    <div class="escreva-aqui">
+      <div class="input-e-botao">
+        <textarea
+          placeholder="Escreva aqui..."
+          id="escrever-mensagem"
+        ></textarea>
+        <div class="enviar-mensagem" id="enviar-mensagem">
+          <ion-icon name="paper-plane-outline"></ion-icon>
+        </div>
+      </div>
+      <span class="texto-envio"
+        >Enviando para Todos (público) como [Seu Nome]</span
+      >
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
