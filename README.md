@@ -1,4 +1,4 @@
-# 💬 UOL Chat Clone
+# 💬UOL Chat Clone
 
 This project is an implementation of a fully functional chat client, inspired by the classic Brazilian Bate-Papo UOL. Developed with a focus on interactivity and real-time communication, this application simulates a dynamic chat environment where users can enter rooms, send public and private messages, and view active participants.
 
@@ -35,7 +35,7 @@ This project is an implementation of a fully functional chat client, inspired by
 ## 📌 *Project Structure*
 
 ```
-📂 Bate-PapoUOL-Driven
+📂 Projeto-Bate-Papo-UOL
 ├── 📄 index.html
 ├── 📄 reset.css
 ├── 📄 script.js
@@ -50,11 +50,33 @@ This project is an implementation of a fully functional chat client, inspired by
 │   └── 📄 chatuol.png
 ```
 
-*(Note: I've named the root folder `Bate-PapoUOL-Driven` based on your terminal path. If the actual repository name is `Projeto-Bate-Papo-UOL` or something else, you can adjust the root folder name in the diagram.)*
-
 ## 📝 *Code Language*
 
 The source code is written in *Portuguese*, including comments, variable names, and function names, for clarity and adherence to project requirements.
+
+## ✨ How to Run/View the Project
+
+This project is a front-end chat application developed with HTML, CSS, and JavaScript, designed to interact with an API (assumed to be running or simulated). To set up and run the application in your browser, follow these steps:
+
+1.  **Download and Run Locally:**
+    * **Clone the repository:**
+        ```bash
+        git clone https://github.com/ClaraDev01/Projeto-Bate-Papo-UOL.git
+        ```
+    * **Navigate to the project directory:**
+        ```bash
+        cd Projeto-Bate-Papo-UOL
+        ```
+    * **Open the `index.html` file in your preferred web browser.** You can do this by dragging the file into your browser window or double-clicking it.
+        * **Important Note:** For full functionality, especially API interactions, it is highly recommended to use a local server (see option 2 below). Direct file opening might have browser security limitations (CORS issues) that prevent the chat from working as expected.
+
+2.  **Use a Local Server Extension (Recommended for Full Functionality):**
+    * If you use **VS Code**, you can install the **Live Server** extension.
+    * With the extension installed, open the project folder in VS Code. Right-click on the `index.html` file and select "Open with Live Server". This will start a local development server (e.g., at `http://127.0.0.1:5500/index.html`) and open the application in your browser, ensuring all JavaScript and API interactions work correctly, along with live reloading.
+
+3.  **Host on Free Services (Like GitHub Pages):**
+    * You can host this project for free using **GitHub Pages**. Configure GitHub Pages to serve content from the `main` (or `master`) branch of your repository. GitHub will then generate a public link for your application (e.g., `https://YourUsername.github.io/Projeto-Bate-Papo-UOL/`).
+    * **Note:** If your chat relies on a *backend API that you also host*, ensure that API is publicly accessible and configured to accept requests from your GitHub Pages URL (CORS settings). If the API is local-only, the GitHub Pages version might not be fully functional unless you mock API responses.
 
 ## 📌 *Future Improvements*
 
